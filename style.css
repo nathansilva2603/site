@@ -1,39 +1,42 @@
-/* =========================
-   CONFIGURAÇÕES GERAIS
-========================= */
+/* =====================================
+   CONFIGURAÇÕES
+===================================== */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: #090807;
+    background: #08050c;
     color: white;
+
+    font-family: "Poppins", sans-serif;
 }
 
 
-/* =========================
+/* =====================================
    MENU
-========================= */
+===================================== */
 
 header {
     position: fixed;
+
     top: 0;
     left: 0;
 
     width: 100%;
 
-    z-index: 1000;
+    z-index: 999;
 
-    background: rgba(8, 6, 5, 0.95);
+    background: rgba(5, 3, 10, 0.92);
 
-    border-bottom: 2px solid #7d2118;
+    border-bottom: 1px solid rgba(255, 0, 200, 0.4);
 
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
 }
 
 nav {
@@ -51,51 +54,50 @@ nav {
 }
 
 .logo {
-    color: #d32f20;
+    color: #ff2bd6;
+
+    font-family: "Bebas Neue", sans-serif;
 
     font-size: 30px;
 
-    font-weight: bold;
-
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 
     text-shadow:
-        0 0 10px #8b0000,
-        0 0 25px #8b0000;
-
-    animation: brilho 2s infinite;
+        0 0 10px #ff2bd6,
+        0 0 30px #ff2bd6;
 }
 
 nav ul {
     display: flex;
 
-    gap: 25px;
+    gap: 30px;
 
     list-style: none;
 }
 
 nav a {
-    color: #ddd;
+    color: white;
 
     text-decoration: none;
 
-    font-size: 16px;
+    font-size: 14px;
 
-    font-weight: bold;
+    font-weight: 600;
 
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #d32f20;
+    color: #ff2bd6;
 
-    text-shadow: 0 0 10px red;
+    text-shadow:
+        0 0 10px #ff2bd6;
 }
 
 
-/* =========================
-   TELA INICIAL
-========================= */
+/* =====================================
+   HERO
+===================================== */
 
 .hero {
     min-height: 100vh;
@@ -108,76 +110,88 @@ nav a:hover {
 
     text-align: center;
 
-    padding: 100px 20px;
+    position: relative;
+
+    overflow: hidden;
 
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.35),
-            rgba(0, 0, 0, 0.9)
+            rgba(5, 0, 15, 0.45),
+            rgba(5, 0, 15, 0.9)
         ),
 
-        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2000&q=80");
+        url("imagens/capa.jpg");
 
     background-size: cover;
 
     background-position: center;
-
-    background-attachment: fixed;
 }
 
 .hero-content {
-    animation: aparecer 2s ease;
+    max-width: 900px;
+
+    padding: 30px;
+
+    animation: aparecer 1.8s ease;
 }
 
-.hero h1 {
-    font-size: clamp(70px, 12vw, 140px);
+.mini-titulo {
+    color: #00eaff;
 
-    color: #d32f20;
-
-    letter-spacing: 10px;
-
-    text-shadow:
-        5px 5px 0 #150504,
-        0 0 25px #8b0000;
-
-    animation: pulsar 3s infinite;
-}
-
-.hero h2 {
-    font-size: 25px;
+    font-size: 13px;
 
     letter-spacing: 5px;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 
-    color: #eee;
+    text-shadow:
+        0 0 10px #00eaff;
 }
 
-.hero p {
+.hero h1 {
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: clamp(70px, 12vw, 150px);
+
+    line-height: 0.8;
+
+    letter-spacing: 5px;
+
+    color: white;
+
+    text-shadow:
+        0 0 10px white,
+        0 0 25px #ff2bd6;
+}
+
+.hero h1 span {
+    color: #ff2bd6;
+
+    text-shadow:
+        0 0 10px #ff2bd6,
+        0 0 30px #ff2bd6,
+        0 0 60px #ff2bd6;
+}
+
+.descricao {
     max-width: 650px;
 
-    margin: auto;
+    margin: 30px auto;
 
     color: #ccc;
 
-    font-size: 18px;
-
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 
-/* =========================
-   BOTÕES
-========================= */
+/* =====================================
+   BOTÃO
+===================================== */
 
-.btn {
+.botao {
     display: inline-block;
 
-    margin-top: 30px;
-
     padding: 15px 30px;
-
-    background: #8e2017;
 
     color: white;
 
@@ -185,64 +199,120 @@ nav a:hover {
 
     font-weight: bold;
 
-    border: 1px solid #d32f20;
+    border: 2px solid #ff2bd6;
+
+    background: rgba(255, 43, 214, 0.1);
+
+    box-shadow:
+        0 0 10px #ff2bd6;
 
     transition: 0.3s;
 }
 
-.btn:hover {
-    background: #d32f20;
+.botao:hover {
+    background: #ff2bd6;
+
+    color: black;
 
     transform: scale(1.08);
 
     box-shadow:
-        0 0 15px #8b0000,
-        0 0 30px #8b0000;
+        0 0 20px #ff2bd6,
+        0 0 50px #ff2bd6;
 }
 
 
-/* =========================
+/* =====================================
+   NEON
+===================================== */
+
+.neon {
+    position: absolute;
+
+    width: 400px;
+
+    height: 400px;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    opacity: 0.25;
+
+    animation: flutuar 6s infinite alternate;
+}
+
+.neon1 {
+    background: #ff00cc;
+
+    top: -150px;
+
+    left: -100px;
+}
+
+.neon2 {
+    background: #0066ff;
+
+    bottom: -150px;
+
+    right: -100px;
+
+    animation-delay: 2s;
+}
+
+
+/* =====================================
    SEÇÕES
-========================= */
+===================================== */
 
 section {
-    padding: 90px 8%;
+    padding: 100px 8%;
 }
 
 .titulo {
     text-align: center;
 
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+}
+
+.titulo span,
+.vegas-content > span {
+    color: #00eaff;
+
+    font-size: 14px;
+
+    letter-spacing: 5px;
+
+    text-shadow: 0 0 10px #00eaff;
 }
 
 .titulo h2 {
-    color: #d32f20;
+    font-family: "Bebas Neue", sans-serif;
 
-    font-size: 42px;
+    font-size: 60px;
 
-    text-transform: uppercase;
+    letter-spacing: 5px;
 
-    letter-spacing: 4px;
+    color: #ff2bd6;
 
-    text-shadow: 0 0 10px #6b1009;
+    text-shadow:
+        0 0 10px #ff2bd6;
 }
 
 .titulo p {
-    color: #999;
-
-    margin-top: 10px;
+    color: #888;
 }
 
 
-/* =========================
-   SOBRE
-========================= */
+/* =====================================
+   FILME
+===================================== */
 
-.sobre {
-    background: #110d0b;
+.filme {
+    background: #0c0712;
 }
 
-.sobre-container {
+.filme-container {
     max-width: 1100px;
 
     margin: auto;
@@ -251,78 +321,97 @@ section {
 
     grid-template-columns: 1fr 1fr;
 
-    gap: 50px;
+    gap: 60px;
 
     align-items: center;
 }
 
-.sobre-texto p {
-    color: #bbb;
+.poster {
+    height: 500px;
+
+    background:
+        linear-gradient(
+            rgba(255, 0, 150, 0.1),
+            rgba(0, 0, 0, 0.5)
+        ),
+
+        url("imagens/capa.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    border: 2px solid #ff2bd6;
+
+    box-shadow:
+        0 0 20px rgba(255, 43, 214, 0.5);
+
+    transition: 0.5s;
+}
+
+.poster:hover {
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 40px #ff2bd6;
+}
+
+.texto h3 {
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 38px;
+
+    color: #00eaff;
+
+    margin-bottom: 20px;
+}
+
+.texto p {
+    color: #aaa;
 
     line-height: 1.9;
 
     margin-bottom: 18px;
 }
 
-.sobre-texto strong {
-    color: #d32f20;
-}
+.alerta {
+    padding: 18px;
 
-.imagem-oeste {
-    height: 350px;
+    margin-top: 25px;
 
-    background:
-        linear-gradient(
-            rgba(100, 0, 0, 0.15),
-            rgba(0, 0, 0, 0.7)
-        ),
+    border: 1px solid #ff2bd6;
 
-        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=80");
-
-    background-size: cover;
-
-    background-position: center;
-
-    border: 2px solid #50150f;
-
-    box-shadow: 0 0 30px rgba(130, 0, 0, 0.4);
-
-    transition: 0.5s;
-}
-
-.imagem-oeste:hover {
-    transform: scale(1.04);
+    color: #ff2bd6;
 
     box-shadow:
-        0 0 20px #8b0000,
-        0 0 45px rgba(139, 0, 0, 0.5);
+        0 0 15px rgba(255, 43, 214, 0.2);
 }
 
 
-/* =========================
+/* =====================================
    PERSONAGENS
-========================= */
+===================================== */
 
 .personagens {
-    background: #090807;
+    background: #08050c;
 }
 
 .cards {
-    max-width: 1100px;
+    max-width: 1200px;
 
     margin: auto;
 
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
-    gap: 25px;
+    gap: 20px;
 }
 
 .card {
-    background: #17120f;
+    background: #120b18;
 
-    border: 1px solid #39201c;
+    border: 1px solid #29202f;
 
     overflow: hidden;
 
@@ -332,14 +421,14 @@ section {
 .card:hover {
     transform: translateY(-15px);
 
-    border-color: #d32f20;
+    border-color: #ff2bd6;
 
     box-shadow:
-        0 15px 35px rgba(130, 0, 0, 0.4);
+        0 15px 40px rgba(255, 0, 200, 0.25);
 }
 
-.card-img {
-    height: 230px;
+.foto {
+    height: 300px;
 
     background-size: cover;
 
@@ -348,66 +437,81 @@ section {
     transition: 0.5s;
 }
 
-.card:hover .card-img {
+.card:hover .foto {
     transform: scale(1.08);
 }
 
-.arthur {
-    background-image:
-        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80");
+.phil {
+    background-image: url("../imagens/phil.jpg");
 }
 
-.dutch {
-    background-image:
-        url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80");
+.stu {
+    background-image: url("../imagens/stu.jpg");
 }
 
-.john {
-    background-image:
-        url("https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=800&q=80");
+.alan {
+    background-image: url("../imagens/alan.jpg");
 }
 
-.card-content {
-    padding: 25px;
+.doug {
+    background-image: url("../imagens/doug.jpg");
 }
 
-.card h3 {
-    color: #d32f20;
-
-    font-size: 25px;
-
-    margin-bottom: 12px;
+.card-info {
+    padding: 22px;
 }
 
-.card p {
-    color: #aaa;
+.card-info h3 {
+    font-family: "Bebas Neue", sans-serif;
+
+    color: #ff2bd6;
+
+    font-size: 32px;
+
+    letter-spacing: 2px;
+}
+
+.card-info span {
+    color: #00eaff;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+.card-info p {
+    color: #999;
+
+    font-size: 14px;
 
     line-height: 1.7;
+
+    margin-top: 12px;
 }
 
 
-/* =========================
-   FRASE
-========================= */
+/* =====================================
+   LAS VEGAS
+===================================== */
 
-.frase {
-    min-height: 450px;
+.vegas {
+    min-height: 650px;
 
     display: flex;
 
-    justify-content: center;
-
     align-items: center;
+
+    justify-content: center;
 
     text-align: center;
 
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.9)
+            rgba(5, 0, 15, 0.5),
+            rgba(5, 0, 15, 0.9)
         ),
 
-        url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=80");
+        url("imagens/capa.jpg");
 
     background-size: cover;
 
@@ -416,94 +520,204 @@ section {
     background-attachment: fixed;
 }
 
-.frase h2 {
-    color: #ddd;
+.vegas h2 {
+    font-family: "Bebas Neue", sans-serif;
 
-    font-size: clamp(30px, 5vw, 55px);
+    font-size: clamp(60px, 9vw, 120px);
 
-    text-shadow: 3px 3px 10px black;
+    line-height: 0.85;
+
+    margin: 20px 0;
 }
 
-.frase p {
-    color: #aaa;
+.vegas h2 strong {
+    color: #ff2bd6;
 
-    margin-top: 20px;
+    text-shadow:
+        0 0 10px #ff2bd6,
+        0 0 40px #ff2bd6;
+}
 
-    font-size: 18px;
+.vegas p {
+    color: #bbb;
 }
 
 
-/* =========================
-   CURIOSIDADES
-========================= */
+/* PLACA */
 
-.curiosidades {
-    background: #110d0b;
-}
+.placa {
+    margin: 40px auto 0;
 
-.lista {
-    max-width: 850px;
-
-    margin: auto;
-}
-
-.item {
-    background: #181310;
-
-    border-left: 4px solid #a5261b;
+    width: 320px;
 
     padding: 20px;
 
-    margin-bottom: 15px;
+    border: 4px solid #ffd000;
 
-    color: #bbb;
+    color: #ffd000;
+
+    box-shadow:
+        0 0 15px #ffd000,
+        inset 0 0 15px rgba(255, 208, 0, 0.3);
+
+    animation: piscar 2s infinite;
+}
+
+.placa h3 {
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 45px;
+
+    letter-spacing: 5px;
+}
+
+.placa small {
+    display: block;
+
+    letter-spacing: 6px;
+}
+
+
+/* =====================================
+   MOMENTOS
+===================================== */
+
+.momentos {
+    background: #0d0813;
+}
+
+.perguntas {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.pergunta {
+    padding: 30px;
+
+    background: #140d1b;
+
+    border: 1px solid #302338;
 
     transition: 0.3s;
 }
 
-.item:hover {
-    transform: translateX(12px);
+.pergunta:hover {
+    border-color: #00eaff;
 
-    background: #241915;
+    transform: translateY(-5px);
 
-    border-left-color: #e03424;
-
-    box-shadow: 0 0 15px rgba(130, 0, 0, 0.2);
+    box-shadow:
+        0 0 20px rgba(0, 234, 255, 0.15);
 }
 
-.item strong {
-    color: #d32f20;
+.pergunta strong {
+    font-size: 35px;
+}
+
+.pergunta h3 {
+    color: #00eaff;
+
+    margin: 10px 0;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 25px;
+}
+
+.pergunta p {
+    color: #888;
 }
 
 
-/* =========================
-   RODAPÉ
-========================= */
+/* =====================================
+   FINAL
+===================================== */
 
-footer {
-    background: #060504;
+.final {
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
 
     text-align: center;
 
-    padding: 35px;
+    background:
+        linear-gradient(
+            rgba(10, 0, 20, 0.65),
+            rgba(0, 0, 0, 0.95)
+        ),
 
-    color: #777;
+        url("imagens/capa.jpg");
 
-    border-top: 1px solid #3a100c;
+    background-size: cover;
+
+    background-position: center;
+}
+
+.final h2 {
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: clamp(50px, 8vw, 100px);
+
+    line-height: 0.9;
+}
+
+.final p {
+    font-size: 25px;
+
+    color: #ff2bd6;
+
+    margin: 20px 0 30px;
+
+    text-shadow:
+        0 0 15px #ff2bd6;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    padding: 40px;
+
+    text-align: center;
+
+    background: #050307;
+
+    border-top: 1px solid #2b1630;
+}
+
+footer h3 {
+    color: #ff2bd6;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 30px;
 }
 
 footer p {
-    margin: 8px;
+    color: #666;
+
+    margin-top: 8px;
+
+    font-size: 13px;
 }
 
-footer span {
-    color: #d32f20;
-}
 
-
-/* =========================
+/* =====================================
    ANIMAÇÕES
-========================= */
+===================================== */
 
 @keyframes aparecer {
 
@@ -518,44 +732,39 @@ footer span {
 
         transform: translateY(0);
     }
+
 }
 
+@keyframes flutuar {
 
-@keyframes pulsar {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(80px, 50px);
+    }
+
+}
+
+@keyframes piscar {
 
     0%, 100% {
-        text-shadow:
-            5px 5px 0 #150504,
-            0 0 15px #8b0000;
+        opacity: 1;
     }
 
     50% {
-        text-shadow:
-            5px 5px 0 #150504,
-            0 0 40px #d32f20;
+        opacity: 0.65;
     }
+
 }
 
 
-@keyframes brilho {
-
-    0%, 100% {
-        text-shadow: 0 0 8px #8b0000;
-    }
-
-    50% {
-        text-shadow:
-            0 0 15px #d32f20,
-            0 0 30px #8b0000;
-    }
-}
-
-
-/* =========================
+/* =====================================
    CELULAR
-========================= */
+===================================== */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
     nav {
         flex-direction: column;
@@ -571,23 +780,36 @@ footer span {
         justify-content: center;
     }
 
-    .sobre-container {
+    .filme-container {
         grid-template-columns: 1fr;
     }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
 
     .cards {
         grid-template-columns: 1fr;
     }
 
+    .perguntas {
+        grid-template-columns: 1fr;
+    }
+
     .hero h1 {
         font-size: 70px;
-
-        letter-spacing: 4px;
     }
 
-    .hero h2 {
-        font-size: 18px;
-
-        letter-spacing: 2px;
+    .titulo h2 {
+        font-size: 45px;
     }
+
+    .placa {
+        width: 100%;
+    }
+
 }
