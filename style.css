@@ -1,0 +1,593 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #090807;
+    color: white;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(8, 6, 5, 0.95);
+
+    border-bottom: 2px solid #7d2118;
+
+    backdrop-filter: blur(8px);
+}
+
+nav {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 18px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.logo {
+    color: #d32f20;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    text-shadow:
+        0 0 10px #8b0000,
+        0 0 25px #8b0000;
+
+    animation: brilho 2s infinite;
+}
+
+nav ul {
+    display: flex;
+
+    gap: 25px;
+
+    list-style: none;
+}
+
+nav a {
+    color: #ddd;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d32f20;
+
+    text-shadow: 0 0 10px red;
+}
+
+
+/* =========================
+   TELA INICIAL
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.9)
+        ),
+
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2000&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+.hero-content {
+    animation: aparecer 2s ease;
+}
+
+.hero h1 {
+    font-size: clamp(70px, 12vw, 140px);
+
+    color: #d32f20;
+
+    letter-spacing: 10px;
+
+    text-shadow:
+        5px 5px 0 #150504,
+        0 0 25px #8b0000;
+
+    animation: pulsar 3s infinite;
+}
+
+.hero h2 {
+    font-size: 25px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 25px;
+
+    color: #eee;
+}
+
+.hero p {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #ccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.btn {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 15px 30px;
+
+    background: #8e2017;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border: 1px solid #d32f20;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #d32f20;
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 15px #8b0000,
+        0 0 30px #8b0000;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section {
+    padding: 90px 8%;
+}
+
+.titulo {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.titulo h2 {
+    color: #d32f20;
+
+    font-size: 42px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    text-shadow: 0 0 10px #6b1009;
+}
+
+.titulo p {
+    color: #999;
+
+    margin-top: 10px;
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre {
+    background: #110d0b;
+}
+
+.sobre-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.sobre-texto p {
+    color: #bbb;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+.sobre-texto strong {
+    color: #d32f20;
+}
+
+.imagem-oeste {
+    height: 350px;
+
+    background:
+        linear-gradient(
+            rgba(100, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.7)
+        ),
+
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+
+    border: 2px solid #50150f;
+
+    box-shadow: 0 0 30px rgba(130, 0, 0, 0.4);
+
+    transition: 0.5s;
+}
+
+.imagem-oeste:hover {
+    transform: scale(1.04);
+
+    box-shadow:
+        0 0 20px #8b0000,
+        0 0 45px rgba(139, 0, 0, 0.5);
+}
+
+
+/* =========================
+   PERSONAGENS
+========================= */
+
+.personagens {
+    background: #090807;
+}
+
+.cards {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: #17120f;
+
+    border: 1px solid #39201c;
+
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+
+    border-color: #d32f20;
+
+    box-shadow:
+        0 15px 35px rgba(130, 0, 0, 0.4);
+}
+
+.card-img {
+    height: 230px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    transition: 0.5s;
+}
+
+.card:hover .card-img {
+    transform: scale(1.08);
+}
+
+.arthur {
+    background-image:
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80");
+}
+
+.dutch {
+    background-image:
+        url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80");
+}
+
+.john {
+    background-image:
+        url("https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=800&q=80");
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card h3 {
+    color: #d32f20;
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #aaa;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FRASE
+========================= */
+
+.frase {
+    min-height: 450px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.9)
+        ),
+
+        url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+.frase h2 {
+    color: #ddd;
+
+    font-size: clamp(30px, 5vw, 55px);
+
+    text-shadow: 3px 3px 10px black;
+}
+
+.frase p {
+    color: #aaa;
+
+    margin-top: 20px;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   CURIOSIDADES
+========================= */
+
+.curiosidades {
+    background: #110d0b;
+}
+
+.lista {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.item {
+    background: #181310;
+
+    border-left: 4px solid #a5261b;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    color: #bbb;
+
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: translateX(12px);
+
+    background: #241915;
+
+    border-left-color: #e03424;
+
+    box-shadow: 0 0 15px rgba(130, 0, 0, 0.2);
+}
+
+.item strong {
+    color: #d32f20;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background: #060504;
+
+    text-align: center;
+
+    padding: 35px;
+
+    color: #777;
+
+    border-top: 1px solid #3a100c;
+}
+
+footer p {
+    margin: 8px;
+}
+
+footer span {
+    color: #d32f20;
+}
+
+
+/* =========================
+   ANIMAÇÕES
+========================= */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes pulsar {
+
+    0%, 100% {
+        text-shadow:
+            5px 5px 0 #150504,
+            0 0 15px #8b0000;
+    }
+
+    50% {
+        text-shadow:
+            5px 5px 0 #150504,
+            0 0 40px #d32f20;
+    }
+}
+
+
+@keyframes brilho {
+
+    0%, 100% {
+        text-shadow: 0 0 8px #8b0000;
+    }
+
+    50% {
+        text-shadow:
+            0 0 15px #d32f20,
+            0 0 30px #8b0000;
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .sobre-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+
+        letter-spacing: 4px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+
+        letter-spacing: 2px;
+    }
+}
