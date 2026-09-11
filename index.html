@@ -1,543 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Interestelar | Uma viagem além do tempo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Dead Redemption II</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <!-- Fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600&display=swap"
-          rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- =====================================
-         ESTRELAS
-    ====================================== -->
-
-    <div class="estrelas"></div>
-    <div class="estrelas estrelas2"></div>
-
-
-    <!-- =====================================
-         MENU
-    ====================================== -->
-
     <header>
+        <div class="logo">RDR II</div>
 
         <nav>
-
-            <div class="logo">
-                INTERSTELAR
-            </div>
-
-            <ul>
-
-                <li>
-                    <a href="#inicio">Início</a>
-                </li>
-
-                <li>
-                    <a href="#filme">O Filme</a>
-                </li>
-
-                <li>
-                    <a href="#personagens">Personagens</a>
-                </li>
-
-                <li>
-                    <a href="#planetas">Planetas</a>
-                </li>
-
-                <li>
-                    <a href="#tempo">O Tempo</a>
-                </li>
-
-            </ul>
-
+            <a href="#inicio">Início</a>
+            <a href="#personagens">Personagens</a>
+            <a href="#mundo">Mundo</a>
+            <a href="#armas">Armas</a>
+            <a href="#honra">Honra</a>
         </nav>
-
     </header>
 
+    <main>
 
-    <!-- =====================================
-         HERO
-    ====================================== -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <p class="wanted">WANTED • DEAD OR ALIVE</p>
 
-    <section class="hero" id="inicio">
+                <h1>RDR II</h1>
 
-        <div class="hero-texto">
+                <h2>RED DEAD REDEMPTION</h2>
 
-            <p class="subtitulo">
-                UMA VIAGEM ALÉM DOS LIMITES
+                <p class="description">
+                    Entre no mundo selvagem do Velho Oeste.
+                    Explore terras desconhecidas, enfrente perigos
+                    e escreva sua própria lenda.
+                </p>
+
+                <a class="btn" href="#personagens">
+                    COMEÇAR A JORNADA
+                </a>
+            </div>
+        </section>
+
+
+        <section class="characters" id="personagens">
+
+            <div class="section-title">
+                <h2>Personagens</h2>
+                <p>Conheça alguns dos personagens marcantes.</p>
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <span>PROTAGONISTA</span>
+                    <h3>Arthur Morgan</h3>
+                    <p>
+                        Um dos principais membros da gangue Van der Linde.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span>LÍDER</span>
+                    <h3>Dutch van der Linde</h3>
+                    <p>
+                        Um líder carismático com grandes planos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span>FORAGIDO</span>
+                    <h3>John Marston</h3>
+                    <p>
+                        Um pistoleiro tentando construir uma nova vida.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span>ATIRADORA</span>
+                    <h3>Sadie Adler</h3>
+                    <p>
+                        Uma das personagens mais determinadas da história.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="world" id="mundo">
+
+            <div class="section-title">
+                <h2>O Velho Oeste</h2>
+                <p>Explore diferentes regiões do mapa.</p>
+            </div>
+
+            <div class="map">
+
+                <div class="location">VALENTINE</div>
+                <div class="location">SAINT DENIS</div>
+                <div class="location">RHODES</div>
+                <div class="location">BLACKWATER</div>
+                <div class="location">STRAWBERRY</div>
+                <div class="location">ANNESBURG</div>
+
+            </div>
+
+        </section>
+
+
+        <section class="weapons" id="armas">
+
+            <div class="section-title">
+                <h2>Arsenal</h2>
+                <p>Escolha seu equipamento.</p>
+            </div>
+
+            <div class="weapon-grid">
+
+                <div class="weapon">
+                    <div class="weapon-icon">🔫</div>
+                    <h3>Revólver</h3>
+                    <p>Precisão e velocidade.</p>
+                </div>
+
+                <div class="weapon">
+                    <div class="weapon-icon">🏹</div>
+                    <h3>Arco</h3>
+                    <p>Silencioso e mortal.</p>
+                </div>
+
+                <div class="weapon">
+                    <div class="weapon-icon">💥</div>
+                    <h3>Espingarda</h3>
+                    <p>Grande poder de fogo.</p>
+                </div>
+
+                <div class="weapon">
+                    <div class="weapon-icon">🎯</div>
+                    <h3>Rifle</h3>
+                    <p>Ideal para longas distâncias.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="honor" id="honra">
+
+            <h2>SISTEMA DE HONRA</h2>
+
+            <div class="honor-bar">
+                <div class="honor-progress"></div>
+            </div>
+
+            <p>
+                Suas escolhas definem sua reputação.
             </p>
 
-            <h1>
-                INTER<br>
-                <span>STELAR</span>
-            </h1>
-
-            <p class="frase-hero">
-                "O amor é a única coisa que transcende
-                tempo e espaço."
-            </p>
-
-            <a href="#filme" class="botao">
-                INICIAR MISSÃO
+            <a class="btn" href="#inicio">
+                VOLTAR AO INÍCIO
             </a>
 
-        </div>
+        </section>
 
+    </main>
 
-        <!-- PLANETA -->
-
-        <div class="planeta"></div>
-
-        <!-- LUZ DO PLANETA -->
-
-        <div class="luz-planeta"></div>
-
-
-        <div class="scroll">
-            ↓ ROLE PARA EXPLORAR
-        </div>
-
-    </section>
-
-
-    <!-- =====================================
-         O FILME
-    ====================================== -->
-
-    <section class="filme" id="filme">
-
-        <div class="titulo">
-
-            <span>01 — A MISSÃO</span>
-
-            <h2>
-                O FILME
-            </h2>
-
-            <p>
-                Uma jornada além do nosso sistema solar.
-            </p>
-
-        </div>
-
-
-        <div class="filme-container">
-
-            <div class="filme-imagem">
-
-                <div class="astronauta">
-                    🚀
-                </div>
-
-            </div>
-
-
-            <div class="filme-texto">
-
-                <h3>
-                    UMA ÚLTIMA ESPERANÇA
-                </h3>
-
-                <p>
-                    Em um futuro onde a Terra enfrenta problemas
-                    ambientais e a humanidade está ameaçada,
-                    um grupo de astronautas recebe uma missão
-                    extraordinária.
-                </p>
-
-                <p>
-                    Cooper, um antigo piloto da NASA, parte em
-                    uma jornada através de um buraco de minhoca
-                    em busca de um novo planeta habitável.
-                </p>
-
-                <p>
-                    Mas existe um problema: no espaço, o tempo
-                    não passa da mesma maneira que na Terra.
-                </p>
-
-                <div class="destaque">
-                    🌌 UMA MISSÃO PARA SALVAR A HUMANIDADE
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================
-         PERSONAGENS
-    ====================================== -->
-
-    <section class="personagens" id="personagens">
-
-        <div class="titulo">
-
-            <span>02 — TRIPULAÇÃO</span>
-
-            <h2>
-                PERSONAGENS
-            </h2>
-
-            <p>
-                Pessoas que atravessaram o desconhecido.
-            </p>
-
-        </div>
-
-
-        <div class="cards">
-
-
-            <!-- COOPER -->
-
-            <article class="card">
-
-                <div class="personagem-imagem cooper">
-                    <span>👨‍🚀</span>
-                </div>
-
-                <div class="card-conteudo">
-
-                    <h3>
-                        COOPER
-                    </h3>
-
-                    <small>
-                        PILOTO • EX-ENGENHEIRO
-                    </small>
-
-                    <p>
-                        Um ex-piloto da NASA que deixa sua
-                        família para participar da missão.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- AMELIA -->
-
-            <article class="card">
-
-                <div class="personagem-imagem amelia">
-                    <span>👩‍🚀</span>
-                </div>
-
-                <div class="card-conteudo">
-
-                    <h3>
-                        AMELIA BRAND
-                    </h3>
-
-                    <small>
-                        ASTRONAUTA • CIENTISTA
-                    </small>
-
-                    <p>
-                        Cientista responsável por estudar
-                        os planetas que podem abrigar
-                        a humanidade.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- MURPH -->
-
-            <article class="card">
-
-                <div class="personagem-imagem murph">
-                    <span>👩‍🔬</span>
-                </div>
-
-                <div class="card-conteudo">
-
-                    <h3>
-                        MURPH
-                    </h3>
-
-                    <small>
-                        CIENTISTA
-                    </small>
-
-                    <p>
-                        Filha de Cooper que cresce e se torna
-                        uma cientista determinada a salvar
-                        a humanidade.
-                    </p>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================
-         PLANETAS
-    ====================================== -->
-
-    <section class="planetas" id="planetas">
-
-        <div class="titulo">
-
-            <span>03 — DESTINOS</span>
-
-            <h2>
-                PLANETAS
-            </h2>
-
-            <p>
-                Mundos desconhecidos esperando para serem explorados.
-            </p>
-
-        </div>
-
-
-        <div class="planetas-grid">
-
-
-            <!-- MILLER -->
-
-            <div class="planeta-card miller">
-
-                <div class="planeta-info">
-
-                    <span>PLANETA 01</span>
-
-                    <h3>
-                        MILLER
-                    </h3>
-
-                    <p>
-                        Um planeta coberto por água,
-                        extremamente próximo do buraco negro.
-                    </p>
-
-                    <strong>
-                        ⏳ 1 HORA = 7 ANOS NA TERRA
-                    </strong>
-
-                </div>
-
-            </div>
-
-
-            <!-- MANN -->
-
-            <div class="planeta-card mann">
-
-                <div class="planeta-info">
-
-                    <span>PLANETA 02</span>
-
-                    <h3>
-                        MANN
-                    </h3>
-
-                    <p>
-                        Um planeta congelado onde a equipe
-                        encontra uma descoberta inesperada.
-                    </p>
-
-                    <strong>
-                        ❄️ MUNDO CONGELADO
-                    </strong>
-
-                </div>
-
-            </div>
-
-
-            <!-- EDMUNDS -->
-
-            <div class="planeta-card edmunds">
-
-                <div class="planeta-info">
-
-                    <span>PLANETA 03</span>
-
-                    <h3>
-                        EDMUNDS
-                    </h3>
-
-                    <p>
-                        Um dos possíveis destinos para a
-                        sobrevivência da humanidade.
-                    </p>
-
-                    <strong>
-                        🌎 POSSIBILIDADE DE VIDA
-                    </strong>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================
-         BURACO NEGRO
-    ====================================== -->
-
-    <section class="buraco">
-
-        <div class="buraco-negro">
-
-            <div class="anel"></div>
-
-            <div class="centro"></div>
-
-        </div>
-
-
-        <div class="buraco-texto">
-
-            <span>04 — O DESCONHECIDO</span>
-
-            <h2>
-                GARGANTUA
-            </h2>
-
-            <p>
-                Um gigantesco buraco negro que influencia
-                o tempo e o espaço ao seu redor.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================
-         O TEMPO
-    ====================================== -->
-
-    <section class="tempo" id="tempo">
-
-        <div class="titulo">
-
-            <span>05 — RELATIVIDADE</span>
-
-            <h2>
-                O TEMPO
-            </h2>
-
-            <p>
-                No espaço, o tempo pode ser completamente diferente.
-            </p>
-
-        </div>
-
-
-        <div class="tempo-container">
-
-            <div class="relogio">
-
-                <div class="ponteiro"></div>
-
-                <div class="centro-relogio"></div>
-
-            </div>
-
-
-            <div class="tempo-texto">
-
-                <h3>
-                    UMA HORA PODE SIGNIFICAR ANOS
-                </h3>
-
-                <p>
-                    A enorme gravidade de Gargantua faz com que
-                    o tempo passe de maneira diferente para
-                    quem está próximo do buraco negro.
-                </p>
-
-                <div class="tempo-numero">
-                    1 HORA
-                    <span>↓</span>
-                    7 ANOS
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================
-         FRASE FINAL
-    ====================================== -->
-
-    <section class="final">
-
-        <div class="final-conteudo">
-
-            <span>UMA ÚLTIMA MENSAGEM</span>
-
-            <h2>
-                NÃO ESTAMOS<br>
-                SOZINHOS.
-            </h2>
-
-            <p>
-                O universo é maior do que imaginamos.
-            </p>
-
-            <a href="#inicio" class="botao">
-                ↑ VOLTAR AO INÍCIO
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================
-         FOOTER
-    ====================================== -->
 
     <footer>
-
-        <h3>
-            INTERSTELAR
-        </h3>
-
-        <p>
-            Projeto de Educação Digital e Computacional
-        </p>
-
-        <p>
-            Desenvolvido com HTML + CSS
-        </p>
-
+        <p>Projeto de fã inspirado em Red Dead Redemption II.</p>
     </footer>
 
-
 </body>
-
 </html>
